@@ -1,0 +1,3 @@
+Timestamp,Scene,Haptics,VisualImpairment,ElapsedSec,DistanceMeters,Collisions,WallContactSec,Waypoints
+2026-11-14 20:40:15,INSA_Campus,OFF,"None (Normal)",162.50,84.84,8,31.50,0/4
+2026-11-14 20:40:16,INSA_Campus,OFF,"None (Normal)",163.48,84.84,8,32.48,0/4
