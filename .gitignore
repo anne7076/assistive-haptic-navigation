@@ -1,0 +1,56 @@
+# Unity generated directories
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Editor & IDE metadata
+.vs/
+.vscode/
+.idea/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vsconfig
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crashlytics & sysinfo
+sysinfo.txt
+
+# Builds and packages
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Diagnostic & temporary captures
+Captures/
+2.png
+2.png.meta
+
+# OS generated files
+.DS_Store
+Thumbs.db
