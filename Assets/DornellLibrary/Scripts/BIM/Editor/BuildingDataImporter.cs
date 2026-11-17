@@ -21,7 +21,11 @@ namespace Dornell.BIM {
             assetImportContext = ctx;
             BuildingData buildingData = new BuildingData();
             if (buildingData.LoadFromFile(assetImportContext.assetPath)) {
-                standardShader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
+                standardShader =
+                    AssetDatabase.LoadAssetAtPath<Shader>("Packages/com.unity.render-pipelines.universal/Shaders/Lit.shader")
+                    ?? Shader.Find("Universal Render Pipeline/Lit")
+                    ?? UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline?.defaultShader
+                    ?? Shader.Find("Standard");
 
                 // create materials
                 buildingMaterials = new Dictionary<int, Material>();
