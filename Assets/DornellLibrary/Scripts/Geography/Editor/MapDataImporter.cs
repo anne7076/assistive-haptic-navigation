@@ -76,6 +76,15 @@ namespace Dornell.Geography {
                     trees.name = "Trees";
                     string treeModelName = $"{name}_Tree";
                     (GameObject treePrefab, string treePrefabPath) = GetAssetAndPath<GameObject>(treeModelName);
+                    if (treePrefab == null) {
+                        string dir = System.IO.Path.GetDirectoryName(assetImportContext.assetPath);
+                        string candidatePath = string.IsNullOrEmpty(dir) ? $"{treeModelName}.prefab" : $"{dir.Replace('\\', '/')}/{treeModelName}.prefab";
+                        if (System.IO.File.Exists(candidatePath)) {
+                            AssetDatabase.ImportAsset(candidatePath, ImportAssetOptions.ForceSynchronousImport);
+                            treePrefab = AssetDatabase.LoadAssetAtPath<GameObject>(candidatePath);
+                            treePrefabPath = candidatePath;
+                        }
+                    }
                     if (treePrefab != null) {
                         assetImportContext.DependsOnSourceAsset(treePrefabPath);
                         assetImportContext.AddObjectToAsset(trees.name, trees);

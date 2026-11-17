@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TP5.unity
-    guid: 48425cd6eb5309a41a323a151d7feb34
-  - enabled: 1
     path: Assets/Scenes/INSA_Campus.unity
     guid: 672f2411158fbdc40a9980677a7084ec
+  - enabled: 1
+    path: Assets/Scenes/TP5.unity
+    guid: 48425cd6eb5309a41a323a151d7feb34
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
